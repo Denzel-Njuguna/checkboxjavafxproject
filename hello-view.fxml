@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.HBox?>
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demojavafx.HelloController" spacing="10">
+    <children>
+<HBox spacing="10">
+
+    <CheckBox fx:id="cat_picture" text="cat" onAction="#showcatpicture"/>
+    <ImageView fx:id="catimageview"  fitHeight="50" fitWidth="50" preserveRatio="true" visible="false"/>
+</HBox>
+
+<HBox spacing="10">
+    <CheckBox fx:id="dog_picture" text="dog" onAction="#showdogpicture"/>
+        <ImageView fx:id="dogimageview" fitHeight="50" fitWidth="50" preserveRatio="true" visible="false"/>
+</HBox>
+<HBox spacing="10">
+            <CheckBox fx:id="rabbit_picture" text="rabbit" onAction="#showrabbitpicture"/>
+            <ImageView fx:id="rabbitimageview" fitWidth="50" fitHeight="50" preserveRatio="true" visible="false"/>
+
+</HBox>
+
+<HBox spacing="10">
+        <CheckBox fx:id="pig_check" onAction="#showpigpicture" text="pig"/>
+        <ImageView fx:id="pigimageview" fitHeight="50" fitWidth="50" visible="false"/>
+</HBox>
+
+<HBox spacing="10">
+    <CheckBox fx:id="bird_check" text="bird" onAction="#showbirdpicture"/>
+    <ImageView fx:id="birdimageview" fitWidth="50" fitHeight="50" visible="false"/>
+
+</HBox>
+
+</children>
+</VBox>
+
